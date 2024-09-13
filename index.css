@@ -82,7 +82,7 @@ ul {
     color: #434343;
 }
 
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
     .paragraph-title {
         font-size: 1.25em;
     }
@@ -95,7 +95,8 @@ ul {
         font-size: 0.87em;
     }
 
-    .form-text, .pronouns-text {
+    .form-text,
+    .pronouns-text {
         width: 100%;
         font-size: 0.93em;
     }
@@ -107,7 +108,7 @@ ul {
     .job-sub-category-text {
         font-size: 1em;
     }
-    
+
     .fillter-dropdown {
         width: 100% !important;
     }
@@ -134,7 +135,6 @@ ul {
 /* logo button styles */
 .logo-btn {
     background-color: #111F3C;
-    width: 10%;
     border: 3px solid #287ECF;
 }
 
@@ -354,17 +354,33 @@ ul {
 
 /* apply for job button */
 .apply-job-btn {
-    background-color: #111F3C;
-    color: white;
-    border: 1px solid #111F3C;
+    border: none;
+    color: #fff;
+    background: #041A40;
+    background-size: 100% auto;
     border-radius: 10px;
     padding: 10px 25px 10px 25px;
 }
 
 .apply-job-btn:hover {
-    background-color: white;
-    color: #111F3C;
-    border: 1px solid #111F3C;
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #041A40;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
 }
 
 /* forms styles */
