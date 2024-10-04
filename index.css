@@ -446,6 +446,10 @@ label {
   padding: 55px 10px 20px 10px;
 }
 
+.footer .container {
+  max-width: 1120px;
+}
+
 footer p {
   margin-bottom: 0px;
 }
